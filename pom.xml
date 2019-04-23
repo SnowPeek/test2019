@@ -48,7 +48,20 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+		<!-- begin:kaptcha验证码 -->
+		<!-- https://mvnrepository.com/artifact/com.github.penggle/kaptcha -->
+		<dependency>
+			<groupId>com.github.penggle</groupId>
+			<artifactId>kaptcha</artifactId>
+			<version>2.3.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.1</version>
+		</dependency>
+		<!-- end:kaptcha验证码 -->
+    </dependencies>
 
 	<build>
 		<plugins>
