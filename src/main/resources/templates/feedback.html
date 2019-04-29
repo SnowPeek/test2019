@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        @import "bootstrap3/css/test.css";
+    </style>
+</head>
+<body>
+<table border="3px">
+    <tr>
+        <td>name</td>
+        <td>value</td>
+        <td>questman</td>
+        <td>answerman</td>
+        <td>answer</td>
+        <td>answertime</td>
+    </tr>
+
+    <tr th:each="feedback : ${feedBacks}">
+        <td th:text="${feedback.name}"></td>
+        <td th:text="${feedback.value}"></td>
+        <td th:text="${feedback.questman}"></td>
+        <td th:text="${feedback.answerman}"></td>
+        <td th:text="${feedback.answer}"></td>
+        <td th:text="${feedback.answertime}"></td>
+    </tr>
+</table>
+
+
+
+<script type="text/javascript" src="/bootstrap3/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/feedback.js"></script>
+
+</body>
+</html>
